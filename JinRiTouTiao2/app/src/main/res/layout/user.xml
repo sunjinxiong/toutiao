@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="#E9E9E9">
+
+        <ImageView
+            android:id="@+id/p"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/sj"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            />
+        <include
+            android:id="@+id/inde"
+            layout="@layout/log"
+            android:visibility="gone"
+            />
+        <ImageView
+            android:id="@+id/q"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/qq"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="130dp"
+            />
+
+        <ImageView
+            android:id="@+id/w"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/weibo"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="240dp" />
+
+        <Button
+            android:id="@+id/many"
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:textSize="10sp"
+            android:text="更多登录方式 >"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="35dp"
+            android:background="@drawable/shape"
+
+            />
+     </RelativeLayout>
+
+
+    <ListView
+        android:layout_weight="1"
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#F3F4F5" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="40dp"
+            android:src="@drawable/xaizai" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="离线下载"
+            android:textSize="10sp"
+            android:layout_marginLeft="38dp"
+            />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+
+            >
+            <ImageView
+                android:id="@+id/she"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="100dp"
+                android:src="@drawable/shezhi" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="设置"
+                android:textSize="10sp"
+                android:layout_marginLeft="104dp"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
